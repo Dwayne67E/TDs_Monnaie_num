@@ -24,3 +24,7 @@ Afin de favoriser cette diversité, nous optons pour les implémentations suivan
 
 Ces deux clients sont minoritaires dans le réseau Ethereum, ce qui contribue à renforcer la résilience et la robustesse du réseau global.
 ![image](https://github.com/user-attachments/assets/8dd488ae-8357-4e27-bbb2-e08566f2b2ec)
+
+### Installation des clients
+Besu et Teku sont en java et nécessite Java 11 ou une version supérieur. On vérifie donc la version sur la VM.
+![image](https://github.com/user-attachments/assets/4e558b58-6fa6-4ee1-a6fe-7cfdb9110f0d)
