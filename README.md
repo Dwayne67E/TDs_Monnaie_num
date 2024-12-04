@@ -18,6 +18,9 @@ Pour sécuriser le réseau Ethereum, il est essentiel que les configurations des
 
 ### Choix des clients
 
-Afin de favoriser cette diversité, nous optons pour nimbus et besu qui sont minoritaire dans le réseau éthereum.
+Afin de favoriser cette diversité, nous optons pour les implémentations suivantes :  
+- **Besu** : Client d'exécution écrit en Java, conçu pour une compatibilité étendue et souvent utilisé dans des contextes d'entreprise.  
+- **Nimbus** : Client de consensus écrit en Nim, léger et adapté aux systèmes à faible consommation de ressources.  
 
+Ces deux clients sont minoritaires dans le réseau Ethereum, ce qui contribue à renforcer la résilience et la robustesse du réseau global.
 ![image](https://github.com/user-attachments/assets/8dd488ae-8357-4e27-bbb2-e08566f2b2ec)
