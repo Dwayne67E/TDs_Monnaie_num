@@ -32,9 +32,6 @@ L'installation de Teku nécessite Java 21 donc j'ai changé la version.
 Il faut aussi installer gradle: 
 ![image](https://github.com/user-attachments/assets/21bb4cff-b5af-4d07-a71e-9453ce6b1643)
 
-Si il y a un bug lors de l'utilisation de gradle il faut netoyer le cache
-![image](https://github.com/user-attachments/assets/30f67447-339c-4336-a30a-967599301b8c)
-
 #### Client de consensus: teku
 ![image](https://github.com/user-attachments/assets/83d86a34-e559-49ad-aa4f-b01976c07b11)
 
