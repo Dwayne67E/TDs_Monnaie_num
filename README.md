@@ -28,8 +28,12 @@ Ces deux clients sont minoritaires dans le réseau Ethereum, ce qui contribue à
 ### Installation des clients
 Besu et Teku sont en java et nécessite Java 11 ou une version supérieur. On vérifie donc la version sur la VM.
 ![image](https://github.com/user-attachments/assets/4e558b58-6fa6-4ee1-a6fe-7cfdb9110f0d)
+L'installation de Teku nécessite Java 21 donc j'ai changé la version.
 Il faut aussi installer gradle: 
-![image](https://github.com/user-attachments/assets/883570cb-1a1f-4221-9b01-2c75044276c2)
+![image](https://github.com/user-attachments/assets/21bb4cff-b5af-4d07-a71e-9453ce6b1643)
+
+Si il y a un bug lors de l'utilisation de gradle il faut netoyer le cache
+![image](https://github.com/user-attachments/assets/30f67447-339c-4336-a30a-967599301b8c)
 
 #### Client de consensus: teku
 ![image](https://github.com/user-attachments/assets/83d86a34-e559-49ad-aa4f-b01976c07b11)
