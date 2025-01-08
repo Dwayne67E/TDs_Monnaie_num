@@ -1,4 +1,6 @@
 # MonnaiesNum_TD1
+
+J'ai réalisé le TD, mais les images ne sont plus dans les BDDs Github, les captures du noeuds seront dans bitcoind_setup.pdf
 ## Bitcoind Setup
 ![image](https://github.com/user-attachments/assets/29345f16-a8fd-43ec-8dc5-08c42f288109)
 
@@ -31,8 +33,10 @@ rpcauth=Dwayne67E:62de6d173b2fa8e0f85c60473442198c$a560f20e6cd1674725c1bdeb1bc87
 
 ![image](https://github.com/user-attachments/assets/c1490a7a-b87c-4f6a-ad18-65760d839c39)
 
+
 ![image](https://github.com/user-attachments/assets/940c800e-c461-42a7-aaf9-7e62cf602c86)
 
 ![image](https://github.com/user-attachments/assets/d5dfb6f8-1c63-487c-9fc6-ff672e9652c2)
 
 ![image](https://github.com/user-attachments/assets/d38254cc-26d4-4875-b3fd-e36d6c6cd866)
+
