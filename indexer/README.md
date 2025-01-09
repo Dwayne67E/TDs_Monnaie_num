@@ -102,7 +102,8 @@ Les événements capturés sont envoyés en temps réel aux clients via un WebSo
 
 ## Contribuer
 
-Les contributions sont les bienvenues ! Créez une *issue* ou soumettez une *pull request* avec des améliorations ou des corrections.
+Les contributions sont les bienvenues ! Créez une *issue* ou soumettez une *pull request* avec des améliorations ou des corrections.  
+Surtout n'hésitez pas à piquer le projet pour le présenter à l'école. Vive la triche !
 
 ---
 
