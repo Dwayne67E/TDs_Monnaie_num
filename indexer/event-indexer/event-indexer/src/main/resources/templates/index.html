@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions Ethereum</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<h2>Transactions Ethereum</h2>
+
+<table id="eventsTable" border="1" style="width:100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>UserOpHash</th>
+            <th>BlockNumber</th>
+            <th>Sender</th>
+            <th>Paymaster</th>
+            <th>Nonce</th>
+            <th>Success</th>
+            <th>Actual Gas Cost</th>
+            <th>Actual Gas Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Les transactions seront ajoutées dynamiquement ici -->
+    </tbody>
+</table>
+
+<script>
+    // Création de la connexion WebSocket
+    const socket = new WebSocket("ws://localhost:8080/ws"); // Adresse WebSocket
+
+    // Connexion au serveur WebSocket
+    socket.onopen = () => {
+        console.log("WebSocket connecté");
+    };
+
+    // Réception des messages via WebSocket
+    socket.onmessage = (event) => {
+        console.log("Événement reçu :", event.data);
+        const transaction = JSON.parse(event.data);
+        updateTransactionsDisplay(transaction);
+    };
+
+    // Fonction pour mettre à jour l'affichage des transactions dans le tableau
+    function updateTransactionsDisplay(transaction) {
+        const table = document.getElementById("eventsTable").getElementsByTagName("tbody")[0];
+        const row = table.insertRow();
+
+        row.insertCell(0).innerText = transaction.userOpHash;
+        row.insertCell(1).innerText = transaction.blockNumber;
+        row.insertCell(2).innerText = transaction.sender;
+        row.insertCell(3).innerText = transaction.paymaster;
+        row.insertCell(4).innerText = transaction.nonce;
+        row.insertCell(5).innerText = transaction.success ? "Yes" : "No";
+        row.insertCell(6).innerText = transaction.actualGasCost;
+        row.insertCell(7).innerText = transaction.actualGasUsed;
+    };
+
+    // Gestion des erreurs WebSocket
+    socket.onerror = (error) => {
+        console.error("Erreur WebSocket :", error);
+    };
+
+    // Fermeture de la connexion WebSocket
+    socket.onclose = () => {
+        console.log("WebSocket déconnecté");
+    };
+</script>
+
+</body>
+</html>
